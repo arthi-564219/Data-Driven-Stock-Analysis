@@ -193,4 +193,3 @@ print("3. data/csv_files/top_10_volatility.png")
 print("4. data/csv_files/sector_performance.png")
 print("5. data/csv_files/top_5_cumulative_returns.png")
 print("========================================")
-

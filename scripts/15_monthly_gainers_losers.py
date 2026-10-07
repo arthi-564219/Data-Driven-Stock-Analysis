@@ -1,6 +1,7 @@
 import os
-import pandas as pd
+
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 # ============================================================
@@ -34,7 +35,7 @@ monthly_returns = (
     .agg(
         First_Close=("Close", "first"),
         Last_Close=("Close", "last"),
-        Trading_Days=("Date", "count")
+        Trading_Days=("Date", "count"),
     )
     .reset_index()
 )
@@ -63,7 +64,7 @@ top_gainers = (
     monthly_returns
     .sort_values(
         ["Month", "Monthly_Return"],
-        ascending=[True, False]
+        ascending=[True, False],
     )
     .groupby("Month")
     .head(5)
@@ -79,7 +80,7 @@ top_losers = (
     monthly_returns
     .sort_values(
         ["Month", "Monthly_Return"],
-        ascending=[True, True]
+        ascending=[True, True],
     )
     .groupby("Month")
     .head(5)
@@ -131,13 +132,12 @@ print(f"Total Months : {len(months)}")
 # ============================================================
 
 for month in months:
-
     # Get current month's gainers
     gainers = top_gainers[
         top_gainers["Month"] == month
     ].sort_values(
         "Monthly_Return",
-        ascending=True
+        ascending=True,
     )
 
     # Get current month's losers
@@ -145,16 +145,15 @@ for month in months:
         top_losers["Month"] == month
     ].sort_values(
         "Monthly_Return",
-        ascending=True
+        ascending=True,
     )
 
     # Create figure with 2 charts
     fig, axes = plt.subplots(
         1,
         2,
-        figsize=(16, 6)
+        figsize=(16, 6),
     )
-
 
     # --------------------------------------------------------
     # GAINERS CHART
@@ -162,7 +161,7 @@ for month in months:
 
     axes[0].barh(
         gainers["Stock"],
-        gainers["Monthly_Return"]
+        gainers["Monthly_Return"],
     )
 
     axes[0].set_title(
@@ -177,14 +176,13 @@ for month in months:
         "Stock"
     )
 
-
     # --------------------------------------------------------
     # LOSERS CHART
     # --------------------------------------------------------
 
     axes[1].barh(
         losers["Stock"],
-        losers["Monthly_Return"]
+        losers["Monthly_Return"],
     )
 
     axes[1].set_title(
@@ -199,18 +197,16 @@ for month in months:
         "Stock"
     )
 
-
     # --------------------------------------------------------
     # MAIN TITLE
     # --------------------------------------------------------
 
     fig.suptitle(
         f"Top 5 Gainers and Losers - {month}",
-        fontsize=16
+        fontsize=16,
     )
 
     plt.tight_layout()
-
 
     # --------------------------------------------------------
     # SAVE CHART
@@ -224,7 +220,7 @@ for month in months:
     plt.savefig(
         chart_file,
         dpi=300,
-        bbox_inches="tight"
+        bbox_inches="tight",
     )
 
     plt.close()
@@ -244,11 +240,10 @@ print(
             "First_Close",
             "Last_Close",
             "Trading_Days",
-            "Monthly_Return"
+            "Monthly_Return",
         ]
     ].to_string(index=False)
 )
-
 
 print("\n========== TOP 5 LOSERS BY MONTH ==========")
 
@@ -260,7 +255,7 @@ print(
             "First_Close",
             "Last_Close",
             "Trading_Days",
-            "Monthly_Return"
+            "Monthly_Return",
         ]
     ].to_string(index=False)
 )

@@ -113,4 +113,3 @@ extract_yaml_to_stock_csv(
     raw_data_dir,
     output_dir
 )
-
