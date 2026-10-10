@@ -1,163 +1,40 @@
-# Data-Driven Stock Analysis
+# 📊 Data-Driven Stock Analysis
 
-## Organizing, Cleaning, and Visualizing Market Trends
+### Organizing, Cleaning, and Visualizing Market Trends
+
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/arthi-564219/Data-Driven-Stock-Analysis)
+[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-red?logo=streamlit)](https://streamlit.io/)
+[![Power BI](https://img.shields.io/badge/Dashboard-Power%20BI-yellow)](https://powerbi.microsoft.com/)
 
 ---
 
 ## 📌 Project Overview
 
-**Data-Driven Stock Analysis** is a data analytics project focused on analyzing historical NIFTY 50 stock market data from November 2023 to November 2024.
+Data-Driven Stock Analysis is a data analytics project that analyzes historical NIFTY 50 stock market data from November 2023 to November 2024.
 
-The project uses Python, Pandas, SQL, Streamlit, and Power BI to extract, clean, transform, analyze, and visualize stock market data.
+The project uses Python, Pandas, NumPy, MySQL, Streamlit, and Power BI to extract, clean, process, analyze, and visualize stock market data.
 
-The project provides insights into:
+### Key Features
 
-- Stock returns
-- Market performance
-- Stock volatility
-- Cumulative returns
+- Top 10 stock gainers and losers
+- Market overview and summary statistics
+- Stock volatility analysis
+- Cumulative returns analysis
 - Sector-wise performance
-- Stock correlations
-- Monthly gainers and losers
+- Stock correlation heatmap
+- Monthly top 5 gainers and losers
+- Interactive Streamlit and Power BI dashboards
 
-Two dashboards are developed as part of this project:
-
-- **Streamlit Dashboard** – Python-based interactive dashboard
-- **Power BI Dashboard** – Interactive business intelligence dashboard
-
----
-
-## 🎯 Objectives
-
-- Analyze historical NIFTY 50 stock market data.
-- Extract and clean raw YAML data.
-- Convert YAML data into structured CSV datasets.
-- Store processed stock data in a MySQL database.
-- Identify the top 10 performing and underperforming stocks.
-- Calculate market summary statistics.
-- Analyze stock volatility and cumulative returns.
-- Analyze sector-wise performance.
-- Calculate stock price correlations.
-- Identify monthly top gainers and losers.
-- Develop interactive dashboards using Streamlit and Power BI.
-
----
-
-## 🛠️ Technologies Used
-
-| Category | Technologies |
-|---|---|
-| Programming | Python |
-| Data Analysis | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Machine Learning | Scikit-learn |
-| Data Extraction | PyYAML |
-| Database | MySQL |
-| Database Connectivity | SQLAlchemy, PyMySQL |
-| Dashboard | Streamlit, Power BI |
-| Version Control | Git, GitHub |
-
----
-
-## 📂 Dataset
-
-The project uses historical market data for **50 NIFTY 50 stocks**.
-
-**Data Period:** November 2023 to November 2024
-
-### Data Fields
-
-- Date
-- Ticker
-- Open
-- High
-- Low
-- Close
-- Volume
-- Month
-
-The dataset is used to calculate stock returns, volatility, cumulative performance, monthly returns, and sector-wise performance.
-
----
-
-## 🔄 Project Workflow
-
-```text
-Raw YAML Data
-      |
-      v
-Data Extraction
-      |
-      v
-Data Cleaning and Transformation
-      |
-      v
-CSV Datasets
-      |
-      v
-MySQL Database
-      |
-      v
-Data Analysis
-      |
-      +-----------------------+
-      |                       |
-      v                       v
-Streamlit Dashboard      Power BI Dashboard
-      |                       |
-      v                       v
-Interactive Analysis     Business Intelligence
-
-📊 Key Analysis
-1. Top 10 Gainers
-
-Identifies the top 10 NIFTY 50 stocks based on yearly returns.
-
-2. Top 10 Losers
-
-Identifies the 10 stocks with the lowest yearly returns.
-
-3. Market Summary
-
-Provides an overview of market performance using:
-
-Total number of stocks
-Number of green stocks
-Number of red stocks
-Average closing price
-Average trading volume
-4. Volatility Analysis
-
-Calculates daily returns and standard deviation to identify stocks with higher price fluctuations.
-
-Daily return is calculated using:
-
-Daily Return = (Current Close - Previous Close) / Previous Close
-5. Cumulative Returns
-
-Calculates cumulative returns to analyze stock performance over time and identify top-performing stocks.
-
-6. Sector-wise Performance
-
-Maps NIFTY 50 stocks to their respective sectors and calculates average yearly returns for each sector.
-
-7. Stock Correlation
-
-Calculates correlations between stock prices using Pandas and visualizes the relationships through a correlation heatmap.
-
-8. Monthly Gainers and Losers
-
-Identifies the top 5 gainers and top 5 losers for each month during the analysis period.
-
-## 📊 Dashboard Previews
+## 🖥️ Dashboard Previews
 
 ### 1. Streamlit Dashboard
 
-Interactive NIFTY 50 Stock Analysis dashboard built using Python, Pandas, MySQL, and Streamlit.
+An interactive dashboard built using Python, Pandas, MySQL, and Streamlit.
 
 #### 🏠 Market Overview
 
-![Streamlit Market Overview](streamlit_dashboard/streamlit_dashboard.png)
+![Streamlit Dashboard](streamlit_dashboard/streamlit_dashboard.png)
 
 ![Market Overview - Monthly Data](streamlit_dashboard/streamlit_market_overview_monthly_data.png)
 
@@ -189,7 +66,7 @@ Interactive NIFTY 50 Stock Analysis dashboard built using Python, Pandas, MySQL,
 
 #### 📅 Monthly Gainers and Losers
 
-![Monthly Gainers and Losers Chart](streamlit_dashboard/streamlit_monthly_gainers_losers_chart.png)
+![Monthly Gainers and Losers](streamlit_dashboard/streamlit_monthly_gainers_losers_chart.png)
 
 ![Monthly Analysis Data](streamlit_dashboard/streamlit_monthly_data.png)
 
@@ -197,7 +74,7 @@ Interactive NIFTY 50 Stock Analysis dashboard built using Python, Pandas, MySQL,
 
 ### 2. Power BI Dashboard
 
-Interactive Power BI reports for stock returns, volatility, sector performance, monthly gainers and losers, and stock correlations.
+Interactive Power BI reports for stock market performance, returns, volatility, sector analysis, and stock correlations.
 
 #### 📅 Monthly Gainers and Losers
 
@@ -221,53 +98,137 @@ Interactive Power BI reports for stock returns, volatility, sector performance, 
 
 ---
 
-### 🚀 Run the Streamlit Dashboard
+## 🎯 Project Objectives
 
-1. Clone the repository:
+- Extract stock market data from YAML files.
+- Clean and transform the extracted data.
+- Convert YAML data into structured CSV files.
+- Organize data for 50 NIFTY 50 stocks.
+- Store processed data in a MySQL database.
+- Calculate stock returns and market summary statistics.
+- Identify top-performing and underperforming stocks.
+- Analyze volatility, cumulative returns, and sector performance.
+- Calculate stock correlations.
+- Identify monthly gainers and losers.
+- Build interactive dashboards using Streamlit and Power BI.
 
-   ```bash
-   git clone https://github.com/arthi-564219/Data-Driven-Stock-Analysis.git
-   ```
+## 🛠️ Technologies Used
 
-2. Open the project folder:
+| Category | Technologies |
+|---|---|
+| Programming | Python |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning Library | Scikit-learn |
+| Data Extraction | PyYAML |
+| Database | MySQL |
+| Database Connectivity | SQLAlchemy, PyMySQL |
+| Interactive Dashboard | Streamlit |
+| Business Intelligence | Power BI |
+| Version Control | Git, GitHub |
 
-   ```bash
-   cd Data-Driven-Stock-Analysis
-   ```
+## 📂 Dataset
 
-3. Install the required packages:
+- **Market:** NIFTY 50
+- **Number of stocks:** 50
+- **Analysis period:** November 2023 – November 2024
+- **Source:** [Project Dataset Folder](https://drive.google.com/drive/folders/1JH7DBYk1uSvkYCxoMA11EI5KM8uXJAI6?usp=sharing)
 
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
+### Data Fields
 
-4. Start the Streamlit application:
+- Date
+- Ticker
+- Open
+- High
+- Low
+- Close
+- Volume
+- Month
 
-   ```bash
-   python -m streamlit run app.py
-   ```
+## 🔄 Project Workflow
 
-5. Open the local URL displayed in the terminal, usually `http://localhost:8501`.
+```text
+Raw YAML Data
+      |
+      v
+Data Extraction
+      |
+      v
+Data Cleaning and Transformation
+      |
+      v
+CSV Datasets for 50 Stocks
+      |
+      v
+MySQL Database
+      |
+      v
+Stock Market Analysis
+      |
+      +--------------------------+
+      |                          |
+      v                          v
+Streamlit Dashboard         Power BI Dashboard
+      |                          |
+      v                          v
+Interactive Analysis        Business Intelligence
+```
 
-**Note:** MySQL must be installed and configured for the database-connected features to work.
+## 📊 Key Analysis
 
----
+### 1. Top 10 Gainers and Losers
 
-### 🔗 Project Links
+Ranks stocks by yearly return to identify the strongest and weakest performers.
 
-- **GitHub Repository:** https://github.com/arthi-564219/Data-Driven-Stock-Analysis
-- **Streamlit Dashboard:** Run locally using the instructions above.
-- **Power BI Dashboard:** View the screenshots in the repository's `powerbi_dashboard.png` folder. The interactive `.pbix` file can be added if you decide to publish or share it.
+### 2. Market Summary
 
-📁 Project Structure
+Summarizes the market using the total number of stocks, green and red stock counts, average closing price, and trading volume.
+
+### 3. Stock Volatility
+
+Uses daily returns and standard deviation to measure fluctuations in stock performance.
+
+Daily return:
+
+`(Current Close - Previous Close) / Previous Close`
+
+### 4. Cumulative Returns
+
+Analyzes stock performance over time and identifies the top-performing stocks across the selected period.
+
+### 5. Sector-wise Performance
+
+Maps stocks to their respective sectors and compares average yearly returns across sectors.
+
+### 6. Stock Correlation
+
+Uses Pandas correlation calculations to examine relationships between stock price movements and presents the results in a heatmap.
+
+### 7. Monthly Gainers and Losers
+
+Identifies the top five gainers and top five losers for each month in the dataset.
+
+## 🗄️ Database
+
+The project uses MySQL to store and retrieve processed stock market data.
+
+| Component | Details |
+|---|---|
+| Database | `stock_analysis` |
+| Main table | `stocks` |
+| Connectivity | SQLAlchemy, PyMySQL |
+
+MySQL must be installed and configured for database-connected features of the application to work.
+
+## 📁 Project Structure
+
+```text
 Data-Driven-Stock-Analysis/
-│
 ├── app.py
 ├── query
-├── .gitignore
-├── README.md
 ├── requirements.txt
-│
+├── README.md
+├── .gitignore
 ├── data/
 │   └── csv_files/
 │       ├── nifty_50/
@@ -285,29 +246,26 @@ Data-Driven-Stock-Analysis/
 │       ├── top_10_losers.csv
 │       ├── top_10_volatility.csv
 │       └── top_5_cumulative_returns.csv
-│
 ├── powerbi_dashboard.png/
 │   ├── cumulative_returns.png
 │   ├── monthly_gainers_losers.png
 │   ├── sector_performance.png
 │   ├── stock_correlation.png
 │   └── stock_volatility.png
-│
 ├── streamlit_dashboard/
-│   ├── streamlit_cumulative_returns_chart.png
-│   ├── streamlit_cumulative_returns_table.png
 │   ├── streamlit_dashboard.png
 │   ├── streamlit_market_overview_monthly_data.png
 │   ├── streamlit_market_overview_sector_table.png
-│   ├── streamlit_monthly_data.png
-│   ├── streamlit_monthly_gainers_losers_chart.png
+│   ├── streamlit_volatility_chart.png
+│   ├── streamlit_volatility_table.png
+│   ├── streamlit_cumulative_returns_chart.png
+│   ├── streamlit_cumulative_returns_table.png
 │   ├── streamlit_sector_performance_chart.png
 │   ├── streamlit_sector_performance_table.png
 │   ├── streamlit_stock_correlation_heatmap.png
 │   ├── streamlit_stock_correlation_matrix.png
-│   ├── streamlit_volatility_chart.png
-│   └── streamlit_volatility_table.png
-│
+│   ├── streamlit_monthly_gainers_losers_chart.png
+│   └── streamlit_monthly_data.png
 ├── scripts/
 │   ├── 01_read_companies.py
 │   ├── 01_yaml_to_csv.py
@@ -332,142 +290,106 @@ Data-Driven-Stock-Analysis/
 │   ├── 16_split_by_symbol.py
 │   ├── 17_volatility_standard.py
 │   └── 18_stock_return.py
-│
 └── yaml_files/
     └── Monthly stock data
-🗄️ Database
+```
 
-The processed stock market data is stored in MySQL.
+*Note: This structure summarizes the project. Keep the README file paths aligned with the actual files in your repository.*
 
-Component	Details
-Database	stock_analysis
-Main Table	stocks
-Database Connectivity	SQLAlchemy, PyMySQL
+## ⚙️ Installation and Setup
 
-SQL is used to store, query, and retrieve processed stock market data for analysis and dashboard development.
+### Prerequisites
 
-⚙️ Installation
+- Python installed
+- MySQL installed and configured
+- Git installed
 
-Install Python and the required libraries.
+### Step 1: Clone the Repository
 
-pip install pandas numpy matplotlib seaborn scikit-learn pyyaml streamlit sqlalchemy pymysql
-
-Alternatively, install all project dependencies using:
-
-pip install -r requirements.txt
-
-Make sure MySQL is installed and configured if you want to use the database functionality.
-
-▶️ Running the Project
-Step 1: Clone the Repository
+```bash
 git clone https://github.com/arthi-564219/Data-Driven-Stock-Analysis.git
-Step 2: Navigate to the Project Directory
+```
+
+### Step 2: Open the Project Folder
+
+```bash
 cd Data-Driven-Stock-Analysis
-Step 3: Install Dependencies
-pip install -r requirements.txt
-Step 4: Run the Streamlit Application
-streamlit run app.py
+```
 
-The Streamlit application will open in your browser.
+### Step 3: Install Dependencies
 
-📦 Key Project Outputs
+```bash
+python -m pip install -r requirements.txt
+```
 
-The project generates datasets and visualizations for:
+### Step 4: Run the Streamlit Dashboard
 
-Top 10 Gainers
-Top 10 Losers
-Market Summary
-Top 10 Volatility
-Cumulative Returns
-Sector Performance
-Stock Correlation
-Monthly Gainers and Losers
-Stock Returns
-Stock Volatility
-📋 Project Results
+```bash
+python -m streamlit run app.py
+```
 
-The following results summarize the market analysis for the selected dataset and analysis period.
+Open the local URL shown in the terminal. It is usually:
 
-Market Summary
-Metric	Result
-Total Stocks	50
-Green Stocks	38
-Red Stocks	12
-Green Stocks Percentage	76%
-Red Stocks Percentage	24%
-Average Closing Price	2230.16
-Average Trading Volume	7,250,021.43
-Top Gainers
+`http://localhost:8501`
 
-The top-performing stocks based on yearly returns include:
+**Note:** Configure the MySQL connection settings required by `app.py` before running database-dependent features.
 
-Rank	Stock	Yearly Return
-1	ADANIPORTS	50.42%
-2	BPCL	41.67%
-3	ONGC	40.40%
-4	TRENT	36.84%
-5	ADANIENT	34.11%
-Top Volatile Stocks
+## 📦 Key Project Outputs
 
-The volatility analysis identifies stocks with higher variation in daily returns.
+- Stock-wise CSV datasets
+- Market summary
+- Top 10 gainers and losers
+- Stock volatility results
+- Cumulative returns
+- Sector performance
+- Stock correlation matrix and heatmap
+- Monthly gainers and losers
+- Streamlit dashboard
+- Power BI dashboard screenshots
 
-Rank	Stock	Volatility
-1	BPCL	8.64%
-2	ONGC	7.51%
-3	ADANIPORTS	6.04%
-4	TRENT	5.75%
-5	COALINDIA	5.27%
-💼 Business Use Cases
-1. Stock Performance Ranking
+## 🎓 Skills Demonstrated
 
-Identify the top-performing and underperforming NIFTY 50 stocks based on yearly returns.
+- Python programming
+- Data extraction and cleaning
+- Data transformation
+- Exploratory data analysis
+- Financial data analysis
+- Statistical analysis
+- Data visualization
+- SQL and MySQL database management
+- Dashboard development
+- Streamlit
+- Power BI
+- Git and GitHub
 
-2. Market Overview
+## 📌 Project Deliverables
 
-Understand overall market performance using green and red stock counts, average prices, and average trading volume.
+- Processed stock market datasets
+- Python analysis scripts
+- MySQL database integration
+- Streamlit dashboard
+- Power BI dashboard
+- Project documentation
+- Public GitHub repository
 
-3. Investment Insights
+## 💼 Business Use Cases
 
-Identify stocks with strong growth, significant declines, and higher volatility for further analysis.
+- Compare stock performance over a selected period.
+- Review market-level statistics.
+- Identify high-volatility stocks.
+- Compare sector performance.
+- Explore relationships between stock movements.
+- Review monthly gainers and losers.
 
-4. Decision Support
+## 👤 Author
 
-Provide data-driven insights into stock performance, volatility, sector trends, and correlations.
-
-🎓 Skills Demonstrated
-Data Collection and Extraction
-Data Cleaning and Transformation
-Exploratory Data Analysis
-Statistical Analysis
-Financial Data Analysis
-Data Visualization
-SQL Database Management
-Python Programming
-Dashboard Development
-Streamlit
-Power BI
-Git and GitHub
-📌 Project Deliverables
-Cleaned and processed stock market datasets
-Python analysis scripts
-MySQL database
-Streamlit interactive dashboard
-Power BI dashboard
-Project documentation
-GitHub repository
-💻 Coding Standards
-Python code follows PEP 8 guidelines.
-Modular Python scripts are used for different analysis tasks.
-Data processing and visualization steps are organized into separate scripts.
-Git and GitHub are used for version control and project maintenance.
-👤 Author
-
-Aarthi R
+**Aarthi R**
 
 B.Sc. Computer Science
 
-GitHub: Data-Driven-Stock-Analysis
+[GitHub Repository](https://github.com/arthi-564219/Data-Driven-Stock-Analysis)
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
-This project is developed for educational and data analytics purposes. The analysis is based on historical stock market data and should not be considered financial or investment advice.
+This project is developed for educational and data analytics purposes. Historical stock market analysis is not financial or investment advice.
+
