@@ -149,56 +149,115 @@ Calculates correlations between stock prices using Pandas and visualizes the rel
 
 Identifies the top 5 gainers and top 5 losers for each month during the analysis period.
 
-📈 Dashboards
-1. Streamlit Dashboard
+## 📊 Dashboard Previews
 
-The Streamlit dashboard provides interactive analysis of NIFTY 50 stock market data.
+### 1. Streamlit Dashboard
 
-Dashboard Features
-Market Overview
-Stock Volatility
-Cumulative Returns
-Sector Performance
-Stock Price Correlation
-Monthly Gainers and Losers
-Streamlit Dashboard Screenshots
-Overall Dashboard
+Interactive NIFTY 50 Stock Analysis dashboard built using Python, Pandas, MySQL, and Streamlit.
 
-Market Overview
+#### 🏠 Market Overview
 
-Stock Volatility
+![Streamlit Market Overview](streamlit_dashboard/streamlit_dashboard.png)
 
-Cumulative Returns
+![Market Overview - Monthly Data](streamlit_dashboard/streamlit_market_overview_monthly_data.png)
 
-Sector Performance
+![Market Overview - Sector Table](streamlit_dashboard/streamlit_market_overview_sector_table.png)
 
-Stock Correlation
+#### 📉 Stock Volatility
 
-Monthly Gainers and Losers
+![Stock Volatility Chart](streamlit_dashboard/streamlit_volatility_chart.png)
 
-2. Power BI Dashboard
+![Stock Volatility Table](streamlit_dashboard/streamlit_volatility_table.png)
 
-Power BI is used to create interactive visualizations for exploring stock market performance, returns, volatility, and sector-wise trends.
+#### 📈 Cumulative Returns
 
-1. Cumulative Returns
+![Cumulative Returns Chart](streamlit_dashboard/streamlit_cumulative_returns_chart.png)
 
-Visualizes the cumulative returns of stocks over the selected analysis period.
+![Cumulative Returns Table](streamlit_dashboard/streamlit_cumulative_returns_table.png)
 
-2. Monthly Gainers and Losers
+#### 🏢 Sector Performance
 
-Displays monthly stock performance and identifies gainers and losers.
+![Sector Performance Chart](streamlit_dashboard/streamlit_sector_performance_chart.png)
 
-3. Sector Performance
+![Sector Performance Table](streamlit_dashboard/streamlit_sector_performance_table.png)
 
-Analyzes average yearly returns across different sectors.
+#### 🔗 Stock Correlation
 
-4. Stock Correlation
+![Stock Correlation Heatmap](streamlit_dashboard/streamlit_stock_correlation_heatmap.png)
 
-Visualizes correlations between NIFTY 50 stocks.
+![Stock Correlation Matrix](streamlit_dashboard/streamlit_stock_correlation_matrix.png)
 
-5. Stock Volatility
+#### 📅 Monthly Gainers and Losers
 
-Displays stock volatility and helps analyze variations in daily returns.
+![Monthly Gainers and Losers Chart](streamlit_dashboard/streamlit_monthly_gainers_losers_chart.png)
+
+![Monthly Analysis Data](streamlit_dashboard/streamlit_monthly_data.png)
+
+---
+
+### 2. Power BI Dashboard
+
+Interactive Power BI reports for stock returns, volatility, sector performance, monthly gainers and losers, and stock correlations.
+
+#### 📅 Monthly Gainers and Losers
+
+![Power BI Monthly Gainers and Losers](powerbi_dashboard.png/monthly_gainers_losers.png)
+
+#### 🏢 Sector Performance
+
+![Power BI Sector Performance](powerbi_dashboard.png/sector_performance.png)
+
+#### 📉 Stock Volatility
+
+![Power BI Stock Volatility](powerbi_dashboard.png/stock_volatility.png)
+
+#### 📈 Cumulative Returns
+
+![Power BI Cumulative Returns](powerbi_dashboard.png/cumulative_returns.png)
+
+#### 🔗 Stock Correlation
+
+![Power BI Stock Correlation](powerbi_dashboard.png/stock_correlation.png)
+
+---
+
+### 🚀 Run the Streamlit Dashboard
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/arthi-564219/Data-Driven-Stock-Analysis.git
+   ```
+
+2. Open the project folder:
+
+   ```bash
+   cd Data-Driven-Stock-Analysis
+   ```
+
+3. Install the required packages:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+4. Start the Streamlit application:
+
+   ```bash
+   python -m streamlit run app.py
+   ```
+
+5. Open the local URL displayed in the terminal, usually `http://localhost:8501`.
+
+**Note:** MySQL must be installed and configured for the database-connected features to work.
+
+---
+
+### 🔗 Project Links
+
+- **GitHub Repository:** https://github.com/arthi-564219/Data-Driven-Stock-Analysis
+- **Streamlit Dashboard:** Run locally using the instructions above.
+- **Power BI Dashboard:** View the screenshots in the repository's `powerbi_dashboard.png` folder. The interactive `.pbix` file can be added if you decide to publish or share it.
 
 📁 Project Structure
 Data-Driven-Stock-Analysis/
