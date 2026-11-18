@@ -72,6 +72,7 @@ An interactive dashboard built using Python, Pandas, MySQL, and Streamlit.
 
 ---
 
+
 ## 2. Power BI Dashboard
 
 Interactive Power BI reports for NIFTY 50 stock market performance, returns, volatility, sector analysis, and stock correlations.
@@ -81,7 +82,6 @@ Interactive Power BI reports for NIFTY 50 stock market performance, returns, vol
 **1. Stock Market Overview**
 
 ![Stock Market Overview](powerbi_dashboard.png/01_Stock_Market_Overview.png)
-
 
 **2. Average Yearly Return by Sector**
 
