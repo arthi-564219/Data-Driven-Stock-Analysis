@@ -82,6 +82,7 @@ Interactive Power BI reports for NIFTY 50 stock market performance, returns, vol
 
 ![Stock Market Overview](powerbi_dashboard.png/01_Stock_Market_Overview.png)
 
+
 **2. Average Yearly Return by Sector**
 
 ![Average Yearly Return by Sector](powerbi_dashboard.png/02_Average_Yearly_Return_by_Sector.png)
