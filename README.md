@@ -72,31 +72,31 @@ An interactive dashboard built using Python, Pandas, MySQL, and Streamlit.
 
 ---
 
-### 2. Power BI Dashboard
+## 2. Power BI Dashboard
 
-Interactive Power BI reports for stock market performance, returns, volatility, sector analysis, and stock correlations.
+Interactive Power BI reports for NIFTY 50 stock market performance, returns, volatility, sector analysis, and stock correlations.
 
-#### 📅 Monthly Gainers and Losers
+### 📊 Dashboard Previews
 
-![Power BI Monthly Gainers and Losers](powerbi_dashboard.png/monthly_gainers_losers.png)
+**1. Stock Market Overview**
 
-#### 🏢 Sector Performance
+![Stock Market Overview](powerbi_dashboard.png/01_Stock_Market_Overview.png)
 
-![Power BI Sector Performance](powerbi_dashboard.png/sector_performance.png)
+**2. Average Yearly Return by Sector**
 
-#### 📉 Stock Volatility
+![Average Yearly Return by Sector](powerbi_dashboard.png/02_Average_Yearly_Return_by_Sector.png)
 
-![Power BI Stock Volatility](powerbi_dashboard.png/stock_volatility.png)
+**3. Top 10 Most Volatile Stocks**
 
-#### 📈 Cumulative Returns
+![Top 10 Most Volatile Stocks](powerbi_dashboard.png/03_Top_10_Volatile_Stocks.png)
 
-![Power BI Cumulative Returns](powerbi_dashboard.png/cumulative_returns.png)
+**4. Cumulative Returns Comparison**
 
-#### 🔗 Stock Correlation
+![Cumulative Returns Comparison](powerbi_dashboard.png/04_Cumulative_Returns_Comparison.png)
 
-![Power BI Stock Correlation](powerbi_dashboard.png/stock_correlation.png)
+**5. NIFTY 50 Stock Correlation Heatmap**
 
----
+![NIFTY 50 Stock Correlation Heatmap](powerbi_dashboard.png/05_NIFTY_50_Stock_Correlation_Heatmap.png)
 
 ## 🎯 Project Objectives
 
