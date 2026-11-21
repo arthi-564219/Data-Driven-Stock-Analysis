@@ -26,6 +26,8 @@ The project uses Python, Pandas, NumPy, MySQL, Streamlit, and Power BI to extrac
 - Monthly top 5 gainers and losers
 - Interactive Streamlit and Power BI dashboards
 
+---
+
 ## 🖥️ Dashboard Previews
 
 ### 1. Streamlit Dashboard
@@ -72,7 +74,6 @@ An interactive dashboard built using Python, Pandas, MySQL, and Streamlit.
 
 ---
 
-
 ## 2. Power BI Dashboard
 
 Interactive Power BI reports for NIFTY 50 stock market performance, returns, volatility, sector analysis, and stock correlations.
@@ -81,23 +82,25 @@ Interactive Power BI reports for NIFTY 50 stock market performance, returns, vol
 
 **1. Stock Market Overview**
 
-![Stock Market Overview](powerbi_dashboard.png/01_Stock_Market_Overview.png)
+![Stock Market Overview](powerbi_dashboard/01_Stock_Market_Overview.png)
 
 **2. Average Yearly Return by Sector**
 
-![Average Yearly Return by Sector](powerbi_dashboard.png/02_Average_Yearly_Return_by_Sector.png)
+![Average Yearly Return by Sector](powerbi_dashboard/02_Average_yearly_return_by_sector.png)
 
-**3. Top 10 Most Volatile Stocks**
+**3. Top 10 Volatility Stocks**
 
-![Top 10 Most Volatile Stocks](powerbi_dashboard.png/03_Top_10_Volatile_Stocks.png)
+![Top 10 Volatility Stocks](powerbi_dashboard/03_Top_10_Volatility_Stocks..png)
 
 **4. Cumulative Returns Comparison**
 
-![Cumulative Returns Comparison](powerbi_dashboard.png/04_Cumulative_Returns_Comparison.png)
+![Cumulative Returns Comparison](powerbi_dashboard/04_Cumulative_Returns_Comparison..png)
 
 **5. NIFTY 50 Stock Correlation Heatmap**
 
-![NIFTY 50 Stock Correlation Heatmap](powerbi_dashboard.png/05_NIFTY_50_Stock_Correlation_Heatmap.png)
+![NIFTY 50 Stock Correlation Heatmap](powerbi_dashboard/05_NIFTY_50_Stock_Correlation_Heatmap..png)
+
+---
 
 ## 🎯 Project Objectives
 
@@ -113,6 +116,8 @@ Interactive Power BI reports for NIFTY 50 stock market performance, returns, vol
 - Identify monthly gainers and losers.
 - Build interactive dashboards using Streamlit and Power BI.
 
+---
+
 ## 🛠️ Technologies Used
 
 | Category | Technologies |
@@ -127,6 +132,8 @@ Interactive Power BI reports for NIFTY 50 stock market performance, returns, vol
 | Interactive Dashboard | Streamlit |
 | Business Intelligence | Power BI |
 | Version Control | Git, GitHub |
+
+---
 
 ## 📂 Dataset
 
@@ -145,6 +152,8 @@ Interactive Power BI reports for NIFTY 50 stock market performance, returns, vol
 - Close
 - Volume
 - Month
+
+---
 
 ## 🔄 Project Workflow
 
@@ -174,6 +183,8 @@ Streamlit Dashboard         Power BI Dashboard
       v                          v
 Interactive Analysis        Business Intelligence
 ```
+
+---
 
 ## 📊 Key Analysis
 
@@ -209,6 +220,8 @@ Uses Pandas correlation calculations to examine relationships between stock pric
 
 Identifies the top five gainers and top five losers for each month in the dataset.
 
+---
+
 ## 🗄️ Database
 
 The project uses MySQL to store and retrieve processed stock market data.
@@ -221,38 +234,28 @@ The project uses MySQL to store and retrieve processed stock market data.
 
 MySQL must be installed and configured for database-connected features of the application to work.
 
+---
+
 ## 📁 Project Structure
 
 ```text
 Data-Driven-Stock-Analysis/
+│
 ├── app.py
 ├── query
 ├── requirements.txt
 ├── README.md
-├── .gitignore
+│
 ├── data/
 │   └── csv_files/
-│       ├── nifty_50/
-│       ├── monthly_charts/
-│       ├── market_summary.csv
-│       ├── monthly_gainers_losers.csv
-│       ├── sector_performance.csv
-│       ├── stock_correlation.csv
-│       ├── stock_return.csv
-│       ├── stock_returns.csv
-│       ├── stock_sectors.csv
-│       ├── stock_summary.csv
-│       ├── stock_volatility.csv
-│       ├── top_10_gainers.csv
-│       ├── top_10_losers.csv
-│       ├── top_10_volatility.csv
-│       └── top_5_cumulative_returns.csv
-├── powerbi_dashboard.png/
-│   ├── cumulative_returns.png
-│   ├── monthly_gainers_losers.png
-│   ├── sector_performance.png
-│   ├── stock_correlation.png
-│   └── stock_volatility.png
+│
+├── powerbi_dashboard/
+│   ├── 01_Stock_Market_Overview.png
+│   ├── 02_Average_yearly_return_by_sector.png
+│   ├── 03_Top_10_Volatility_Stocks..png
+│   ├── 04_Cumulative_Returns_Comparison..png
+│   └── 05_NIFTY_50_Stock_Correlation_Heatmap..png
+│
 ├── streamlit_dashboard/
 │   ├── streamlit_dashboard.png
 │   ├── streamlit_market_overview_monthly_data.png
@@ -267,6 +270,7 @@ Data-Driven-Stock-Analysis/
 │   ├── streamlit_stock_correlation_matrix.png
 │   ├── streamlit_monthly_gainers_losers_chart.png
 │   └── streamlit_monthly_data.png
+│
 ├── scripts/
 │   ├── 01_read_companies.py
 │   ├── 01_yaml_to_csv.py
@@ -291,11 +295,14 @@ Data-Driven-Stock-Analysis/
 │   ├── 16_split_by_symbol.py
 │   ├── 17_volatility_standard.py
 │   └── 18_stock_return.py
+│
 └── yaml_files/
     └── Monthly stock data
 ```
 
-*Note: This structure summarizes the project. Keep the README file paths aligned with the actual files in your repository.*
+*Note: The structure summarizes the project files and folders.*
+
+---
 
 ## ⚙️ Installation and Setup
 
@@ -335,6 +342,8 @@ Open the local URL shown in the terminal. It is usually:
 
 **Note:** Configure the MySQL connection settings required by `app.py` before running database-dependent features.
 
+---
+
 ## 📦 Key Project Outputs
 
 - Stock-wise CSV datasets
@@ -347,6 +356,8 @@ Open the local URL shown in the terminal. It is usually:
 - Monthly gainers and losers
 - Streamlit dashboard
 - Power BI dashboard screenshots
+
+---
 
 ## 🎓 Skills Demonstrated
 
@@ -363,6 +374,8 @@ Open the local URL shown in the terminal. It is usually:
 - Power BI
 - Git and GitHub
 
+---
+
 ## 📌 Project Deliverables
 
 - Processed stock market datasets
@@ -373,6 +386,8 @@ Open the local URL shown in the terminal. It is usually:
 - Project documentation
 - Public GitHub repository
 
+---
+
 ## 💼 Business Use Cases
 
 - Compare stock performance over a selected period.
@@ -382,6 +397,8 @@ Open the local URL shown in the terminal. It is usually:
 - Explore relationships between stock movements.
 - Review monthly gainers and losers.
 
+---
+
 ## 👤 Author
 
 **Aarthi R**
@@ -390,7 +407,8 @@ B.Sc. Computer Science
 
 [GitHub Repository](https://github.com/arthi-564219/Data-Driven-Stock-Analysis)
 
+---
+
 ## ⚠️ Disclaimer
 
 This project is developed for educational and data analytics purposes. Historical stock market analysis is not financial or investment advice.
-
